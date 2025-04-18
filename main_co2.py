@@ -682,7 +682,7 @@ if __name__ == '__main__':
 
     well_controls = []
     well_controls +=  ['wbhp']
-    #well_controls += ['rate']
+    #well_controls += ['wrate']
 
 
     for physics_type in physics_list:
