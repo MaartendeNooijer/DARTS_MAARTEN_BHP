@@ -167,7 +167,8 @@ class Model_CPG(CICDModel):
                     self.reservoir.add_perforation(wname,
                                                    cell_index=perf_ijk_new,
                                                    well_index=perf.well_index, well_indexD=perf.well_indexD,
-                                                   multi_segment=perf.multi_segment, verbose=True)
+                                                   multi_segment=True, verbose=True)
+                                                   #multi_segment=perf.multi_segment, verbose=True)
         else:
             # add wells and perforations, 1-based indices
             for wname, wdata in self.idata.well_data.wells.items():
